@@ -8,3 +8,17 @@ img {
   opacity: 0.7;
   cursor: pointer;
 }
+
+body {
+  /* Add background styles here (color or image) */
+}
+
+.columns {
+  display: flex; /* Activate Flexbox layout */
+  flex-wrap: wrap; /* Allow columns to wrap if needed */
+}
+
+.column {
+  flex: 1; /* Distribute available space equally */
+  padding: 1rem; /* Add some padding for content */
+}
