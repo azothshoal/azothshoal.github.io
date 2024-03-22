@@ -23,3 +23,7 @@ body {
   flex: 1; /* Distribute available space equally */
   padding: 1rem; /* Add some padding for content */
 }
+
+.custom-main {
+  background-color: #96DED1;
+}
