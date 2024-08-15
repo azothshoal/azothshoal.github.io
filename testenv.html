@@ -1,0 +1,24 @@
+<head>
+  </head>
+<body style="background-color: {{ getColor 'cumin' '500' }}">  <header>
+    <h1>My little Website</h1>
+  </header>
+  <main class="custom-main">
+    <p>INTENTION</p>
+    <a href="profile.html"> My profile
+    </a>
+    <section class="columns">
+  {{#each cats}}
+    {{> _article 
+      image=this.image 
+      altText=this.altText 
+      title=this.title 
+      image2=this.image2 
+      altText2=this.altText2 
+      description=this.description}}
+  {{/each}}
+</section>  </main>
+ <script src="data.js"></script>
+</body>
+
+
