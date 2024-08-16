@@ -1,19 +1,29 @@
 const cats = [
   {
+    name: "Treecat",
     image: "./images/neighbor-cats/treecat.JPG",
-    altText: "treecat",
-    title: "Treecat",
-    image2: "./images/neighbor-cats/sushi.JPG",
-    altText2: "sushi",
-    description: "Sushi (RIP)"
+    description: "A cat that loves climbing trees"
   },
   {
+    name: "Sushi",
+    image: "./images/neighbor-cats/sushi.JPG",
+    description: "Sushi (RIP) - A beloved neighborhood cat"
+  },
+  {
+    name: "Red Collar Cat",
     image: "./images/neighbor-cats/redcollarcat.JPG",
-    altText: "redcollarcat",
-    title: "Red Collar Cat",
-    image2: "./images/neighbor-cats/wolf.jpg",
-    altText2: "wolf",
+    description: "Known for its distinctive red collar"
+  },
+  {
+    name: "Wolf",
+    image: "./images/neighbor-cats/wolf.jpg",
     description: "Wolf (honorary neighbor cat)"
+  },
+  {
+    name: "Albert",
+    image: "./images/neighbor-cats/albert.jpg",
+    description: "A scrappy fighter"
   }
 ];
 
+module.exports = { cats };
