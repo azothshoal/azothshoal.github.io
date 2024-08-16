@@ -1,0 +1,15 @@
+---
+layout: layout.hbs
+eleventyComputed:
+  pageTitle: "{{ cats.pageTitle }}"
+  items: "{{ cats.items }}"
+---
+<div class="content-grid">
+{{#each items}}
+  <div class="content-item">
+    <h2>{{name}}</h2>
+    <img src="{{image}}" alt="{{name}}">
+    <p>{{description}}</p>
+  </div>
+{{/each}}
+</div>
