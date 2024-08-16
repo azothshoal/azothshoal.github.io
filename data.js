@@ -23,6 +23,16 @@ const cats = [
     name: "Albert",
     image: "./images/neighbor-cats/albert.jpg",
     description: "A scrappy fighter"
+  },
+  {
+    name: "Teddy",
+    image: "./images/neighbor-cats/teddy.jpg",
+    description: "A well-traveled cat"
+  },
+  {
+    name: "Not Teddy",
+    image: "./images/neighbor-cats/not_teddy.jpg",
+    description: "Not Teddy"
   }
 ];
 
