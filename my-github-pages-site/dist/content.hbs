@@ -1,0 +1,10 @@
+<h1>{{pageTitle}}</h1>
+<div class="content-grid">
+    {{#each items}}
+    <div class="content-item">
+        <img src="{{this.image}}" alt="{{this.name}}">
+        <h2>{{this.name}}</h2>
+        <p>{{this.description}}</p>
+    </div>
+    {{/each}}
+</div>
