@@ -1,8 +1,7 @@
 {
   "name": "azothshoal.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "data.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -10,12 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  },
+  "description": "",
   "dependencies": {
     "express": "^4.19.2",
-    "express-handlebars": "^8.0.1",
     "handlebars": "^4.7.8"
   }
 }
