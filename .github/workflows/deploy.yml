@@ -1,9 +1,9 @@
-name: Deploy Eleventy site to Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -22,11 +22,15 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # or whatever version you're using
+          node-version: '18'
       - name: Display package.json contents
         run: cat package.json
+      - name: Clear npm cache
+        run: npm cache clean --force
       - name: Install dependencies
         run: npm install
+      - name: List installed packages
+        run: npm list --depth=0
       - name: Build
         run: npm run build
       # Add any additional steps for deployment here
