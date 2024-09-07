@@ -1,15 +1,15 @@
 ---
 layout: layouts/base.hbs
-pageTitle: Neighborhood Cats
-subheader: 'The naming of cats is a serious matter. - T.S. Eliot'
+pageTitle: Cats
+subheader: 'Cats are connoisseurs of comfort. - James Herriot'
 pageColor: cats
 ---
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 min-h-full">
   {{#each siteData.cats}}
     <div class="bg-white p-4 rounded-lg shadow">
-      <img src="{{this.image}}" alt="{{this.name}}" class="w-full h-48 object-cover mb-4 rounded">
+      <img src="{{this.image}}" alt="{{this.name}}" class="w-full h-48 object-cover mb-4 rounded gallery-image">
       <h2 class="text-xl font-bold mb-2">{{this.name}}</h2>
-      <p class="text-gray-700">{{this.description}}</p>
+      <p class="text-gray-700 text-sm md:text-base">{{this.description}}</p>
     </div>
   {{/each}}
 </div>
