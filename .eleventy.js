@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
   // Copy the CSS file
   eleventyConfig.addPassthroughCopy("src/styles");
 
+  // Add favicon copy
+  eleventyConfig.addPassthroughCopy("src/images/intention.ico");
+
   return {
     dir: {
       input: "src",  // adjust if your source directory is different
