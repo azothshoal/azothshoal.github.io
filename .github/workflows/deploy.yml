@@ -27,9 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build with Eleventy
-        uses: TartanLlama/actions-eleventy@v1.2
-        with:
-          install_dependencies: false
+        run: npx @11ty/eleventy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

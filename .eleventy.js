@@ -19,8 +19,6 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",  // adjust if your source directory is different
       output: "_site"
-    },
-    templateFormats: ["hbs", "md", "html"],
-    htmlTemplateEngine: "hbs"
+    }
   };
 };
