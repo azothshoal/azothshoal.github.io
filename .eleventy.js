@@ -12,6 +12,9 @@ module.exports = function(eleventyConfig) {
     return require("./src/_data/data.js");
   });
 
+  // Copy the `src/.nojekyll` file to `dist/`
+  eleventyConfig.addPassthroughCopy(".nojekyll");
+
   return {
     dir: {
       input: "src",

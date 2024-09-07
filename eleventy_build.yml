@@ -1,11 +1,11 @@
-name: Eleventy Build
+name: Eleventy Build and Deploy
 on:
   push:
     branches:
       - main
 
 jobs:
-  build_deploy:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,10 +14,9 @@ jobs:
           node-version: '14'
       - run: npm ci
       - run: npm run build
-      - name: List contents of dist directory
-        run: ls -R dist
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: yourdomain.com  # Replace with your custom domain if you have one, or remove this line if not
