@@ -23,4 +23,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'bg-primary-main',
+    'bg-primary-cats',
+    'bg-primary-plants',
+    'bg-primary-about'
+  ],
 };
