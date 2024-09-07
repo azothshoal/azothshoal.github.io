@@ -4,7 +4,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy && postcss src/styles/tailwind.css -o dist/styles/tailwind.css",
+    "build": "eleventy && tailwindcss -i src/styles/tailwind.css -o dist/styles/tailwind.css",
     "start": "eleventy --serve & postcss src/styles/tailwind.css -o dist/styles/tailwind.css --watch"
   },
   "keywords": [],
