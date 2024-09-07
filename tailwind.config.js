@@ -1,7 +1,10 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./src/**/*.{html,js,hbs}"],
+  content: [
+    "./src/**/*.{html,js,hbs}",
+    "!**/node_modules/**"
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -19,15 +22,5 @@ module.exports = {
       },
     },
   },
-  safelist: [
-    'bg-primary-main',
-    'bg-primary-cats',
-    'bg-primary-plants',
-    'bg-primary-about',
-    'text-primary-main',
-    'text-primary-cats',
-    'text-primary-plants',
-    'text-primary-about',
-  ],
   plugins: [],
 };

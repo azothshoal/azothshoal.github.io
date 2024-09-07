@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
   // Copy the `src/.nojekyll` file to `dist/`
   eleventyConfig.addPassthroughCopy(".nojekyll");
 
+  // Copy the CSS file
+  eleventyConfig.addPassthroughCopy("src/styles");
+
   return {
     dir: {
       input: "src",  // adjust if your source directory is different
