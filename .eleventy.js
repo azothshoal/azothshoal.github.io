@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("dist/styles");
+  eleventyConfig.addPassthroughCopy("src/styles");
   
   // Add this line to copy images
   eleventyConfig.addPassthroughCopy("src/images");
@@ -10,9 +10,6 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy(".nojekyll");
-
-  // Copy the CSS file
-  eleventyConfig.addPassthroughCopy("src/styles");
 
   // Add favicon copy
   eleventyConfig.addPassthroughCopy("src/images/intention.ico");

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "eleventy && tailwindcss -i src/styles/tailwind.css -o _site/styles/tailwind.css --minify",
-    "start": "eleventy --serve & postcss src/styles/tailwind.css -o dist/styles/tailwind.css --watch"
+    "start": "eleventy --serve & tailwindcss -i src/styles/tailwind.css -o _site/styles/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
