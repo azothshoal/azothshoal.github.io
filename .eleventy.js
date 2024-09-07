@@ -17,8 +17,8 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      input: "src",
-      output: "dist"
+      input: "src",  // adjust if your source directory is different
+      output: "_site"
     },
     templateFormats: ["hbs", "md", "html"],
     htmlTemplateEngine: "hbs"
