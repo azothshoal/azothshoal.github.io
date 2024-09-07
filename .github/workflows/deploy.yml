@@ -1,9 +1,8 @@
-name: Deploy to GitHub Pages
-
+name: Build and Deploy
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -23,19 +22,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Display package.json contents
-        run: cat package.json
-      - name: Clear npm cache and remove package-lock.json
-        run: |
-          npm cache clean --force
-          rm -f package-lock.json
       - name: Install dependencies
-        run: npm install
-      - name: List installed packages
-        run: npm list --depth=0
+        run: npm ci
       - name: Build
         run: npm run build
-      # Add any additional steps for deployment here
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
 
   deploy:
     needs: build
