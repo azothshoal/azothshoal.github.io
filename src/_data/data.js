@@ -16,11 +16,6 @@ module.exports = {
       description: "Known for its distinctive red collar"
     },
     {
-      name: "Wolf",
-      image: "/images/neighbor-cats/wolf.jpg",
-      description: "Wolf (honorary neighbor cat)"
-    },
-    {
       name: "Albert",
       image: "/images/neighbor-cats/albert.jpg",
       description: "A scrappy fighter"
@@ -34,7 +29,12 @@ module.exports = {
       name: "Not Teddy",
       image: "/images/neighbor-cats/not_teddy.jpg",
       description: "Not Teddy"
-    }
+    },
+    {
+        name: "Wolf",
+        image: "/images/neighbor-cats/wolf.jpg",
+        description: "Wolf (honorary neighbor cat)"
+      }
   ],
   plants: [
     {

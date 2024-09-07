@@ -9,15 +9,25 @@ module.exports = {
       },
       colors: {
         'primary': {
-          'main': '#4f46e5', // Indigo for main page
-          'cats': '#fbbf24', // Amber for cats page
-          'plants': '#16a34a', // Green for plants page
-          'about': '#2563eb', // Blue for about page
+          'main': '#4f46e5',  // Indigo for main page
+          'cats': '#f59e0b',  // Amber for cats page
+          'plants': '#10b981', // Emerald for plants page
+          'about': '#3b82f6',  // Blue for about page
         },
         'sidebar': '#475569', // Slate for sidebar
         'background': '#e4e4e7', // Zinc for page background
       },
     },
   },
+  safelist: [
+    'bg-primary-main',
+    'bg-primary-cats',
+    'bg-primary-plants',
+    'bg-primary-about',
+    'text-primary-main',
+    'text-primary-cats',
+    'text-primary-plants',
+    'text-primary-about',
+  ],
   plugins: [],
 };

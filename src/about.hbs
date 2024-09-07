@@ -3,4 +3,16 @@ layout: layouts/base.hbs
 pageTitle: About This Project
 pageColor: about
 ---
-<p class="text-lg">This project is a showcase of neighborhood cats and plants, built using Eleventy and Tailwind CSS.</p>
+<div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
+    <img src="/images/profile-photo.jpg" alt="Profile Photo" class="w-48 h-48 rounded-full object-cover shadow-lg">
+    <h2>AzothShoal</h2>
+</div>
+
+<h2 class="text-2xl font-bold mt-8 mb-4">Technical Details</h2>
+<ul class="list-disc list-inside text-lg space-y-2">
+  {{#each technicalDetails}}
+    <li>
+      <a href="{{this.url}}" class="text-primary-about hover:underline">{{this.name}}</a>, {{this.description}}
+    </li>
+  {{/each}}
+</ul>
