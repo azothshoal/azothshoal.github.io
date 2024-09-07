@@ -1,0 +1,8 @@
+---
+layout: layouts/base.hbs
+pageTitle: Plants
+subheader: 'Life is bristling with thorns, and I know no other remedy than to cultivate one''s garden. - Voltaire'
+pageColor: plants
+---
+<p>Debug: {{#if siteData.plants}}Plants data is available{{else}}No plants data{{/if}}</p>
+{{> gallery items=siteData.plants}}

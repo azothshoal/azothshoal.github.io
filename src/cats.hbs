@@ -1,0 +1,8 @@
+---
+layout: layouts/base.hbs
+pageTitle: Neighborhood Cats
+subheader: 'Cats are connoisseurs of comfort. - James Herriot'
+pageColor: cats
+---
+<p>Debug: {{#if siteData.cats}}Cats data is available{{else}}No cats data{{/if}}</p>
+{{> gallery items=siteData.cats}}
