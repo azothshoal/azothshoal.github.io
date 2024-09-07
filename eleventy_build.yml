@@ -1,4 +1,4 @@
-name: Eleventy Build and Deploy
+name: Build and Deploy
 on:
   push:
     branches:
@@ -9,14 +9,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: '14'
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            
       - run: npm ci
       - run: npm run build
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: yourdomain.com  # Replace with your custom domain if you have one, or remove this line if not
