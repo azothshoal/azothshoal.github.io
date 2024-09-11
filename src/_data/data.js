@@ -8,7 +8,7 @@ module.exports = {
     {
         name: "Sushi",
         image: "/images/neighbor-cats/sushi.JPG",
-        description: "Sushi (RIP) - A beloved neighborhood cat"
+        description: "A beloved neighborhood cat (RIP)"
     },
     {
         name: "Red Collar Cat",
