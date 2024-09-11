@@ -103,9 +103,9 @@ module.exports = {
         description: "Mountain Marigold"
     },
     {
-      name: "Zamioculcas",
-      image: "/images/plants/zamioculcas.jpg",
-      description: "A hardy plant gifted by a friend"
+        name: "Zamioculcas",
+        image: "/images/plants/zamioculcas.jpg",
+        description: "A hardy plant gifted by a friend"
     },
     {
         name: "Zauschneria California",
