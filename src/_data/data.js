@@ -43,7 +43,7 @@ module.exports = {
         description: "Strybing Beauty - a Cape Mallow"
     },
     {
-        name: "Arbutus Meziesii",
+        name: "Arbutus Menziesii",
         image: "/images/plants/arbutus_menziesii.jpg",
         description: "Pacific madrone"
     },
@@ -80,7 +80,7 @@ module.exports = {
     {
         name: "Rosa Floribunda",
         image: "/images/plants/rosa_floribunda.jpg",
-        description: "'Oranges and Lemons' Rose'"
+        description: "'Oranges and Lemons' rose'"
     },
     {
         name: "Salvia Amistad",
