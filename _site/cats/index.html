@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neighborhood Cats</title>
+    <title>Cats</title>
     <link rel="icon" href="/images/intention.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/tailwind.css">
 </head>
 <body class="bg-background font-sans flex flex-col min-h-full">
     <div class="h-16 bg-primary-cats w-full"></div>
-    <div class="flex flex-grow">
-        <div class="flex flex-col w-64">
-            <aside class="bg-sidebar text-white p-4 flex-grow">
+    <div class="flex flex-col md:flex-row flex-grow">
+        <div class="w-full md:w-64 md:flex-shrink-0">
+            <aside class="bg-sidebar text-white p-4 md:sticky md:top-0 md:h-screen">
                 <nav>
-                    <ul>
+                    <ul class="flex md:block justify-around">
                         <li><a href="/" class="block py-2 hover:text-primary-main">Home</a></li>
                         <li><a href="/cats" class="block py-2 hover:text-primary-cats">Cats</a></li>
                         <li><a href="/plants" class="block py-2 hover:text-primary-plants">Plants</a></li>
@@ -22,82 +22,54 @@
                     </ul>
                 </nav>
             </aside>
-            <footer class="bg-gray-200 py-4 px-4 text-left">
-                <p>&copy; 2024 azothshoal</p>
-            </footer>
         </div>
-        <main class="flex-1 p-8">
-            <header class="mb-8">
-                <h1 class="text-3xl font-bold">Neighborhood Cats</h1>
-                    <p class="text-xl text-gray-600 mt-2">The naming of cats is a serious matter. - T.S. Eliot</p>
+        <main class="flex-1 p-4 md:p-8 flex flex-col">
+            <header class="mb-4 md:mb-8">
+                <h1 class="text-2xl md:text-3xl font-bold">Cats</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mt-2">The naming of cats is a difficult matter - T.S. Eliot</p>
             </header>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/treecat.JPG" alt="Treecat" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Treecat</h2>
-          <p class="text-xs text-gray-700">A cat that loves climbing trees</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/sushi.JPG" alt="Sushi" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Sushi</h2>
-          <p class="text-xs text-gray-700">Sushi (RIP) - A beloved neighborhood cat</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/redcollarcat.JPG" alt="Red Collar Cat" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Red Collar Cat</h2>
-          <p class="text-xs text-gray-700">Known for its distinctive red collar</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/albert.jpg" alt="Albert" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Albert</h2>
-          <p class="text-xs text-gray-700">A scrappy fighter</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/teddy.jpg" alt="Teddy" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Teddy</h2>
-          <p class="text-xs text-gray-700">A well-traveled cat</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/not_teddy.jpg" alt="Not Teddy" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Not Teddy</h2>
-          <p class="text-xs text-gray-700">Not Teddy</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/neighbor-cats/wolf.jpg" alt="Wolf" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-cats">Wolf</h2>
-          <p class="text-xs text-gray-700">Wolf (honorary neighbor cat)</p>
-        </div>
-      </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/treecat.JPG" alt="Treecat" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Treecat</h2>
+      <p class="text-gray-700 text-sm md:text-base">A cat that loves climbing trees</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/sushi.JPG" alt="Sushi" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Sushi</h2>
+      <p class="text-gray-700 text-sm md:text-base">Sushi (RIP) - A beloved neighborhood cat</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/redcollarcat.JPG" alt="Red Collar Cat" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Red Collar Cat</h2>
+      <p class="text-gray-700 text-sm md:text-base">Known for its distinctive red collar</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/albert.jpg" alt="Albert" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Albert</h2>
+      <p class="text-gray-700 text-sm md:text-base">A scrappy fighter</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/teddy.jpg" alt="Teddy" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Teddy</h2>
+      <p class="text-gray-700 text-sm md:text-base">A well-traveled cat</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/not_teddy.jpg" alt="Not Teddy" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Not Teddy</h2>
+      <p class="text-gray-700 text-sm md:text-base">Not Teddy</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/neighbor-cats/wolf.jpg" alt="Wolf" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Wolf</h2>
+      <p class="text-gray-700 text-sm md:text-base">Wolf (honorary neighbor cat)</p>
+    </div>
 </div>
 
         </main>
     </div>
+    <footer class="bg-gray-200 py-4 px-4 text-left mt-auto">
+        <p>&copy; 2024 azothshoal</p>
+    </footer>
 </body>
 </html>

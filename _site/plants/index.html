@@ -10,11 +10,11 @@
 </head>
 <body class="bg-background font-sans flex flex-col min-h-full">
     <div class="h-16 bg-primary-plants w-full"></div>
-    <div class="flex flex-grow">
-        <div class="flex flex-col w-64">
-            <aside class="bg-sidebar text-white p-4 flex-grow">
+    <div class="flex flex-col md:flex-row flex-grow">
+        <div class="w-full md:w-64 md:flex-shrink-0">
+            <aside class="bg-sidebar text-white p-4 md:sticky md:top-0 md:h-screen">
                 <nav>
-                    <ul>
+                    <ul class="flex md:block justify-around">
                         <li><a href="/" class="block py-2 hover:text-primary-main">Home</a></li>
                         <li><a href="/cats" class="block py-2 hover:text-primary-cats">Cats</a></li>
                         <li><a href="/plants" class="block py-2 hover:text-primary-plants">Plants</a></li>
@@ -22,37 +22,89 @@
                     </ul>
                 </nav>
             </aside>
-            <footer class="bg-gray-200 py-4 px-4 text-left">
-                <p>&copy; 2024 azothshoal</p>
-            </footer>
         </div>
-        <main class="flex-1 p-8">
-            <header class="mb-8">
-                <h1 class="text-3xl font-bold">Plants</h1>
-                    <p class="text-xl text-gray-600 mt-2">Life is bristling with thorns, and I know no other remedy than to cultivate one&#x27;s garden. - Voltaire</p>
+        <main class="flex-1 p-4 md:p-8 flex flex-col">
+            <header class="mb-4 md:mb-8">
+                <h1 class="text-2xl md:text-3xl font-bold">Plants</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mt-2">Life is bristling with thorns, and I know no other remedy than to cultivate one&#x27;s garden. - Voltaire</p>
             </header>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/plants/yellow_rose.jpg" alt="Yellow Rose" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-plants">Yellow Rose</h2>
-          <p class="text-xs text-gray-700">A beautiful yellow rose</p>
-        </div>
-      </div>
-      <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
-        <div class="aspect-square overflow-hidden">
-          <img src="/images/plants/zamioculcas.jpg" alt="Zamioculcas" class="w-full h-full object-cover">
-        </div>
-        <div class="p-2">
-          <h2 class="font-bold text-sm mb-1 text-primary-plants">Zamioculcas</h2>
-          <p class="text-xs text-gray-700">A hardy plant gifted by a friend</p>
-        </div>
-      </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/anisodontea_sp.jpg" alt="Anisodontea Sp." class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Anisodontea Sp.</h2>
+      <p class="text-gray-700 text-sm md:text-base">Strybing Beauty - a Cape Mallow</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/arbutus_menziesii.jpg" alt="Arbutus Meziesii" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Arbutus Meziesii</h2>
+      <p class="text-gray-700 text-sm md:text-base">Pacific madrone</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/frangula_californica.jpg" alt="Frangula Californica" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Frangula Californica</h2>
+      <p class="text-gray-700 text-sm md:text-base">Coffeeberry</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/fuchsia_thymifolia.jpg" alt="Fuchsia Thymifolia" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Fuchsia Thymifolia</h2>
+      <p class="text-gray-700 text-sm md:text-base">Native to Mexico and northern Guatemala</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/geranium.jpg" alt="Geranium" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Geranium</h2>
+      <p class="text-gray-700 text-sm md:text-base">Some kind of geranium</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/geranium.jpg" alt="Geranium" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Geranium</h2>
+      <p class="text-gray-700 text-sm md:text-base">Some kind of geranium</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/japanese_maple.jpg" alt="Japanese Maple" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Japanese Maple</h2>
+      <p class="text-gray-700 text-sm md:text-base">A nice, shady Japanese Maple</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/romneya_trichocalyx.jpg" alt="Romneya Trichocalyx" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Romneya Trichocalyx</h2>
+      <p class="text-gray-700 text-sm md:text-base">The fried egg-like Matilija Poppy</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/salvia_amistad.jpg" alt="Salvia Amistad" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Salvia Amistad</h2>
+      <p class="text-gray-700 text-sm md:text-base">Friendship Sage</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/salvia_involucrata.jpg" alt="Salvia Involucrata" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Salvia Involucrata</h2>
+      <p class="text-gray-700 text-sm md:text-base">Roseleaf Sage</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/streptosolen_jamesonii.jpg" alt="Streptosolen Jamesonii" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Streptosolen Jamesonii</h2>
+      <p class="text-gray-700 text-sm md:text-base">Marmalade Bush</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/tagetes_lemmonii.jpg" alt="Tagetes Lemmonii" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Tagetes Lemmonii</h2>
+      <p class="text-gray-700 text-sm md:text-base">Mountain Marigold</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/zamioculcas.jpg" alt="Zamioculcas" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Zamioculcas</h2>
+      <p class="text-gray-700 text-sm md:text-base">A hardy plant gifted by a friend</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <img src="/images/plants/zauschneria_california.jpg" alt="Zauschneria California" class="w-full h-48 object-cover mb-4 rounded gallery-image">
+      <h2 class="text-xl font-bold mb-2">Zauschneria California</h2>
+      <p class="text-gray-700 text-sm md:text-base">California Fuchsia</p>
+    </div>
 </div>
 
         </main>
     </div>
+    <footer class="bg-gray-200 py-4 px-4 text-left mt-auto">
+        <p>&copy; 2024 azothshoal</p>
+    </footer>
 </body>
 </html>

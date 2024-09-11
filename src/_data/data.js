@@ -34,19 +34,78 @@ module.exports = {
         name: "Wolf",
         image: "/images/neighbor-cats/wolf.jpg",
         description: "Wolf (honorary neighbor cat)"
-      }
+    }
   ],
   plants: [
     {
-      name: "Yellow Rose",
-      image: "/images/plants/yellow_rose.jpg",
-      description: "A beautiful yellow rose"
+        name: "Anisodontea Sp.",
+        image: "/images/plants/anisodontea_sp.jpg",
+        description: "Strybing Beauty - a Cape Mallow"
+    },
+    {
+        name: "Arbutus Meziesii",
+        image: "/images/plants/arbutus_menziesii.jpg",
+        description: "Pacific madrone"
+    },
+    {
+        name: "Frangula Californica",
+        image: "/images/plants/frangula_californica.jpg",
+        description: "Coffeeberry"
+    },
+    {
+        name: "Fuchsia Thymifolia",
+        image: "/images/plants/fuchsia_thymifolia.jpg",
+        description: "Native to Mexico and northern Guatemala"
+    },
+    {
+        name: "Geranium",
+        image: "/images/plants/geranium.jpg",
+        description: "Some kind of geranium"
+    },
+    {
+        name: "Geranium",
+        image: "/images/plants/geranium.jpg",
+        description: "Some kind of geranium"
+    },
+    {
+      name: "Japanese Maple",
+      image: "/images/plants/japanese_maple.jpg",
+      description: "A nice, shady Japanese Maple"
+    },
+    {
+        name: "Romneya Trichocalyx",
+        image: "/images/plants/romneya_trichocalyx.jpg",
+        description: "The fried egg-like Matilija Poppy"
+    },
+    {
+        name: "Salvia Amistad",
+        image: "/images/plants/salvia_amistad.jpg",
+        description: "Friendship Sage"
+    },
+    {
+        name: "Salvia Involucrata",
+        image: "/images/plants/salvia_involucrata.jpg",
+        description: "Roseleaf Sage"
+    },
+    {
+        name: "Streptosolen Jamesonii",
+        image: "/images/plants/streptosolen_jamesonii.jpg",
+        description: "Marmalade Bush"
+    },
+    {
+        name: "Tagetes Lemmonii",
+        image: "/images/plants/tagetes_lemmonii.jpg",
+        description: "Mountain Marigold"
     },
     {
       name: "Zamioculcas",
       image: "/images/plants/zamioculcas.jpg",
       description: "A hardy plant gifted by a friend"
     },
-    // Add more plants here as needed
+    {
+        name: "Zauschneria California",
+        image: "/images/plants/zauschneria_california.jpg",
+        description: "California Fuchsia"
+    },
   ]
 };

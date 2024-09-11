@@ -10,11 +10,11 @@
 </head>
 <body class="bg-background font-sans flex flex-col min-h-full">
     <div class="h-16 bg-primary-about w-full"></div>
-    <div class="flex flex-grow">
-        <div class="flex flex-col w-64">
-            <aside class="bg-sidebar text-white p-4 flex-grow">
+    <div class="flex flex-col md:flex-row flex-grow">
+        <div class="w-full md:w-64 md:flex-shrink-0">
+            <aside class="bg-sidebar text-white p-4 md:sticky md:top-0 md:h-screen">
                 <nav>
-                    <ul>
+                    <ul class="flex md:block justify-around">
                         <li><a href="/" class="block py-2 hover:text-primary-main">Home</a></li>
                         <li><a href="/cats" class="block py-2 hover:text-primary-cats">Cats</a></li>
                         <li><a href="/plants" class="block py-2 hover:text-primary-plants">Plants</a></li>
@@ -22,18 +22,18 @@
                     </ul>
                 </nav>
             </aside>
-            <footer class="bg-gray-200 py-4 px-4 text-left">
-                <p>&copy; 2024 azothshoal</p>
-            </footer>
         </div>
-        <main class="flex-1 p-8">
-            <header class="mb-8">
-                <h1 class="text-3xl font-bold">About This Project</h1>
+        <main class="flex-1 p-4 md:p-8 flex flex-col">
+            <header class="mb-4 md:mb-8">
+                <h1 class="text-2xl md:text-3xl font-bold">About This Project</h1>
             </header>
             <div class="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
     <img src="/images/profile-photo.jpg" alt="Profile Photo" class="w-48 h-48 rounded-full object-cover shadow-lg">
     <h2>AzothShoal</h2>
-</div>
+</div></br>
+<p class="mt-4 md:mt-8 text-sm md:text-base">"If one wants to be active, one mustn't be afraid to do something wrong sometimes, not afraid to lapse into some mistakes. To be good — many people think that they'll achieve it by doing no harm — and that's a lie…</br></br>
+That leads to stagnation, to mediocrity. Just slap something on it when you see a blank canvas staring at you with a sort of imbecility.”</br>
+― Vincent Van Gogh</p>
 
 <h2 class="text-2xl font-bold mt-8 mb-4">Technical Details</h2>
 <ul class="list-disc list-inside text-lg space-y-2">
@@ -53,5 +53,8 @@
 
         </main>
     </div>
+    <footer class="bg-gray-200 py-4 px-4 text-left mt-auto">
+        <p>&copy; 2024 azothshoal</p>
+    </footer>
 </body>
 </html>
