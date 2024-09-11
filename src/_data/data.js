@@ -1,34 +1,34 @@
 module.exports = {
   cats: [
     {
-      name: "Treecat",
-      image: "/images/neighbor-cats/treecat.JPG",
-      description: "A cat that loves climbing trees"
+        name: "Treecat",
+        image: "/images/neighbor-cats/treecat.JPG",
+        description: "A cat that loves climbing trees"
     },
     {
-      name: "Sushi",
-      image: "/images/neighbor-cats/sushi.JPG",
-      description: "Sushi (RIP) - A beloved neighborhood cat"
+        name: "Sushi",
+        image: "/images/neighbor-cats/sushi.JPG",
+        description: "Sushi (RIP) - A beloved neighborhood cat"
     },
     {
-      name: "Red Collar Cat",
-      image: "/images/neighbor-cats/redcollarcat.JPG",
-      description: "Known for its distinctive red collar"
+        name: "Red Collar Cat",
+        image: "/images/neighbor-cats/redcollarcat.JPG",
+        description: "Known for its distinctive red collar"
     },
     {
-      name: "Albert",
-      image: "/images/neighbor-cats/albert.jpg",
-      description: "A scrappy fighter"
+        name: "Albert",
+        image: "/images/neighbor-cats/albert.jpg",
+        description: "A scrappy fighter"
     },
     {
-      name: "Teddy",
-      image: "/images/neighbor-cats/teddy.jpg",
-      description: "A well-traveled cat"
+        name: "Teddy",
+        image: "/images/neighbor-cats/teddy.jpg",
+        description: "A well-traveled cat"
     },
     {
-      name: "Not Teddy",
-      image: "/images/neighbor-cats/not_teddy.jpg",
-      description: "Not Teddy"
+        name: "Not Teddy",
+        image: "/images/neighbor-cats/not_teddy.jpg",
+        description: "Not Teddy"
     },
     {
         name: "Wolf",
@@ -63,19 +63,24 @@ module.exports = {
         description: "Some kind of geranium"
     },
     {
-        name: "Geranium",
-        image: "/images/plants/geranium.jpg",
-        description: "Some kind of geranium"
-    },
-    {
-      name: "Japanese Maple",
-      image: "/images/plants/japanese_maple.jpg",
-      description: "A nice, shady Japanese Maple"
+        name: "Japanese Maple",
+        image: "/images/plants/japanese_maple.jpg",
+        description: "A nice, shady Japanese Maple"
     },
     {
         name: "Romneya Trichocalyx",
         image: "/images/plants/romneya_trichocalyx.jpg",
         description: "The fried egg-like Matilija Poppy"
+    },
+    {
+        name: "Papaver Rhoeas",
+        image: "/images/plants/papaver_rhoeas.jpg",
+        description: "the 'Common Poppy'"
+    },
+    {
+        name: "Rosa Floribunda",
+        image: "/images/plants/rosa_floribunda.jpg",
+        description: "'Oranges and Lemons' Rose'"
     },
     {
         name: "Salvia Amistad",
