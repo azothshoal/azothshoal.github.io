@@ -38,6 +38,11 @@ module.exports = {
   ],
   plants: [
     {
+        name: "Acer Palmatum",
+        image: "/images/plants/japanese_maple.jpg",
+        description: "A nice, shady Japanese Maple"
+    },    
+    {
         name: "Anisodontea Sp.",
         image: "/images/plants/anisodontea_sp.jpg",
         description: "Strybing Beauty - a Cape Mallow"
@@ -63,19 +68,14 @@ module.exports = {
         description: "Some kind of geranium"
     },
     {
-        name: "Japanese Maple",
-        image: "/images/plants/japanese_maple.jpg",
-        description: "A nice, shady Japanese Maple"
+        name: "Papaver Rhoeas",
+        image: "/images/plants/papaver_rhoeas.jpg",
+        description: "the 'Common Poppy'"
     },
     {
         name: "Romneya Trichocalyx",
         image: "/images/plants/romneya_trichocalyx.jpg",
         description: "The fried egg-like Matilija Poppy"
-    },
-    {
-        name: "Papaver Rhoeas",
-        image: "/images/plants/papaver_rhoeas.jpg",
-        description: "the 'Common Poppy'"
     },
     {
         name: "Rosa Floribunda",
@@ -103,9 +103,9 @@ module.exports = {
         description: "Mountain Marigold"
     },
     {
-        name: "Zamioculcas",
+        name: "Zamioculcas Zamiifolia",
         image: "/images/plants/zamioculcas.jpg",
-        description: "A hardy plant gifted by a friend"
+        description: "A hardy Zanzibar Gem gifted by a friend"
     },
     {
         name: "Zauschneria California",
