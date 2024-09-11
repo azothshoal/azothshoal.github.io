@@ -80,7 +80,7 @@ module.exports = {
     {
         name: "Rosa Floribunda",
         image: "/images/plants/rosa_floribunda.jpg",
-        description: "'Oranges and Lemons' rose'"
+        description: "'Oranges and Lemons' rose"
     },
     {
         name: "Salvia Amistad",
